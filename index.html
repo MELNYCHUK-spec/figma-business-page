@@ -1,13 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <title>FigmaLand-Business Landing page</title>
+    <link rel="shortcut icon" href="images/favicon/figma-favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
 </head>
 <body>
+<header class="header">
+    <div class="header__inner container">
 
+        <a href="/" class="header__logo">
+            <img
+                    src="./images/header/Figma_land_logo.svg"
+                    alt="Figma Land Logo"
+                    width="186" height="58"
+                    class="header__logo-img"
+                    loading="lazy">
+        </a>
+
+        <nav class="header__menu" aria-label="Main navigation">
+            <ul class="header__menu-list">
+                <li class="header__menu-item"><a href="/" class="header__menu-link">Home</a></li>
+                <li class="header__menu-item"><a href="/product" class="header__menu-link">Product</a></li>
+                <li class="header__menu-item"><a href="/pricing" class="header__menu-link">Pricing</a></li>
+                <li class="header__menu-item"><a href="/about" class="header__menu-link">About</a></li>
+                <li class="header__menu-item"><a href="/contact" class="header__menu-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="header__socials-nav" aria-label="Social media">
+            <ul class="header__socials">
+                <li class="header__socials-item">
+                    <a class="header__socials-link" href="/">
+                        <img src="./images/header/twitter_logo.svg" alt="Twitter" width="42" height="42" class="header__socials-img" loading="lazy">
+                    </a>
+                </li>
+                <li class="header__socials-item">
+                    <a class="header__socials-link" href="/">
+                        <img src="./images/header/facebook_logo.svg" alt="Facebook" width="33" height="34" class="header__socials-img" loading="lazy">
+                    </a>
+                </li>
+                <li class="header__socials-item">
+                    <a class="header__socials-link" href="/">
+                        <img src="./images/header/instagram_logo.svg" alt="Instagram" width="33" height="34" class="header__socials-img" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="hero">
+        <div class="hero__content container">
+            <h1 class="hero__title">The best products start with Figma</h1>
+            <div class="hero__description">
+                <p>
+                    Most calendars are designed for teams.
+                    Slate is designed for freelancers
+                </p>
+            </div>
+            <button class="hero__button button" type="button">Try for free</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features__inner container">
+            <header class="features__header">
+                <h2 class="features__title">Features</h2>
+                <div class="features__description">
+                    Most calendars are designed for teams.
+                    Slate is designed for freelancers
+                </div>
+            </header>
+
+            <div class="features__list">
+                <article class="features__card">
+                    <img
+                            src="./images/features/features-card-1.svg"
+                            alt="circle and square icon"
+                            width="61"
+                            height="61"
+                            loading="lazy">
+                    <div class="features__card-body">
+                        <h3 class="features__card-title">
+                            OpenType features <br>
+                            Variable fonts
+                        </h3>
+                        <p class="features__card-description">
+                            Slate helps you see how many more days you need to work to reach your financial goal.
+                        </p>
+                    </div>
+                </article>
+                <article class="features__card">
+                    <img
+                            src="./images/features/features-card-2.svg"
+                            alt="pencil icon"
+                            width="57"
+                            height="56"
+                            loading="lazy">
+                    <div class="features__card-body">
+                        <h3 class="features__card-title">
+                            Design with real data
+                        </h3>
+                        <p class="features__card-description">
+                            Slate helps you see how
+                            many more days you need
+                            to work to reach your
+                            financial goal.
+                        </p>
+                    </div>
+                </article>
+                <article class="features__card">
+                    <img
+                            src="./images/features/features-card-3.svg"
+                            alt="brush icon"
+                            width="61"
+                            height="61"
+                            loading="lazy">
+                    <div class="features__card-body">
+                        <h3 class="features__card-title">
+                            Fastest way to
+                            take action
+                        </h3>
+                        <p class="features__card-description">
+                            Slate helps you see how many more days you need to work to reach your financial goal.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>
